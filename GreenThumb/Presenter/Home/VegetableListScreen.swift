@@ -14,34 +14,37 @@ struct VegetableListScreen: View {
     )
     
     var body: some View {
-        
-        VStack {
-            switch viewModel.vegetablesState {
-            case .loading, .idle:
-                ProgressView()
-                    .scaleEffect(2.0, anchor: .center)
-                    .progressViewStyle(CircularProgressViewStyle(tint: .black))
-            case .error(errorMessage: let error):
-                Text(error)
-            default:
-                if !viewModel.vegetables.isEmpty {
-                    List(viewModel.vegetables, id: \.vegetableID) {
-                        vegetables in Text(vegetables.name)
+        NavigationWrapper {
+            VStack {
+                switch viewModel.vegetablesState {
+                case .loading, .idle:
+                    ProgressView()
+                        .scaleEffect(2.0, anchor: .center)
+                        .progressViewStyle(CircularProgressViewStyle(tint: .black))
+                case .error(errorMessage: let error):
+                    Text(error)
+                default:
+                    if !viewModel.vegetables.isEmpty {
+                        List(viewModel.vegetables, id: \.vegetableID) {
+                            vegetables in VegetableCellView(vegetable: vegetables)
+                        }
+                        .listStyle(.plain)
+                    } else {
+                        Text("Nenhum vegetal encontrado")
                     }
-                    .listStyle(.plain)
-                } else {
-                    Text("Nenhum vegetal encontrado")
                 }
             }
-        }
-        .onAppear {
-            Task {
-                await viewModel.fetchVegetables()
-            }
+            .onAppear {
+                Task {
+                    await viewModel.fetchVegetables()
+                }
+            }.navigationTitle(Text("Vegetais"))
         }
     }
 }
 
 #Preview {
-    VegetableListScreen()
+    NavigationWrapper {
+        VegetableListScreen()
+    }
 }
