@@ -18,7 +18,7 @@ class AppCoordinator: BaseCoordinator<Route> {
     override var view: any View {
         switch route {
         case .home:
-            return VegetableListScreen()
+            return VegetablesHome()
         }
-    }
+    } 
 }
