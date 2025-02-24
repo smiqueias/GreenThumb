@@ -9,6 +9,10 @@ import Foundation
 
 final class VegetablesRepository: DefaultConnector {
     
+    public static let shared = VegetablesRepository()
+    
+    private override init() {}
+    
     public func fetchVegeatbles()  async throws -> Data {
       let apiResponse =  try await request(url: Constants.vegetablesUrl)
       return apiResponse
