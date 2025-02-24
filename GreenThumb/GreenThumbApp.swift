@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GreenThumbApp: App {
+    
+    @ObservedObject var appCoordinator = AppCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            VegetableListScreen()
+            appCoordinator.currentView.environmentObject(appCoordinator)
         }
     }
 }
