@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FB4CE008-7787-419F-A384-90CAC1A99B08"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C165E84-D5CF-4E61-929D-3B79927C923B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GreenThumb/Scene/Detail/VegetableDetailScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F177CDD-C1A0-432A-93FC-CCEDF246E315"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GreenThumb/Scene/Detail/VegetableDetailScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3F177CDD-C1A0-432A-93FC-CCEDF246E315 - cc31f194b38a35fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(GreenThumb.VegetableImage, SwiftUI.Text, SwiftUI.Divider, SwiftUI.Text, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, Swift.Optional&lt;GreenThumb.DetailRow&gt;, SwiftUI.Divider, GreenThumb.SectionHeader, SwiftUI.Text, GreenThumb.SectionHeader, SwiftUI.Text)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0 in GreenThumb.VegetableDetailScreen.body.getter : some"
+                  moduleName = "GreenThumb.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saulo.nascimento/dev/apps/iOS/GreenThumb/GreenThumb/Scene/Detail/VegetableDetailScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "3F177CDD-C1A0-432A-93FC-CCEDF246E315 - e94703bf8a965ec7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (GreenThumb.Pest) -&gt; Swift.String in closure #1 () -&gt; SwiftUI.TupleView&lt;(GreenThumb.VegetableImage, SwiftUI.Text, SwiftUI.Divider, SwiftUI.Text, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, GreenThumb.DetailRow, Swift.Optional&lt;GreenThumb.DetailRow&gt;, SwiftUI.Divider, GreenThumb.SectionHeader, SwiftUI.Text, GreenThumb.SectionHeader, SwiftUI.Text)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0 in GreenThumb.VegetableDetailScreen.body.getter : some"
+                  moduleName = "GreenThumb.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saulo.nascimento/dev/apps/iOS/GreenThumb/GreenThumb/Scene/Detail/VegetableDetailScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

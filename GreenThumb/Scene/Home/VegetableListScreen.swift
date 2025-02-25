@@ -14,7 +14,6 @@ struct VegetableListScreen: View {
     )
     
     var body: some View {
-        NavigationWrapper {
             VStack {
                 switch viewModel.vegetablesState {
                 case .loading, .idle:
@@ -26,7 +25,13 @@ struct VegetableListScreen: View {
                 default:
                     if !viewModel.vegetables.isEmpty {
                         List(viewModel.vegetables, id: \.vegetableID) {
-                            vegetables in VegetableCellView(vegetable: vegetables)
+                            vegetables in NavigationLink(
+                                destination: {
+                                    VegetableDetailScreen(vegetable: vegetables)
+                                }, label: {
+                                    VegetableCellView(vegetable: vegetables)
+                                }
+                            )
                         }
                         .listStyle(.plain)
                     } else {
@@ -39,7 +44,6 @@ struct VegetableListScreen: View {
                     await viewModel.fetchVegetables()
                 }
             }.navigationTitle(Text("Vegetais"))
-        }
     }
 }
 
