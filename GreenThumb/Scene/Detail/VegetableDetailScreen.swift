@@ -58,8 +58,7 @@ struct VegetableDetailScreen: View {
             }.frame(alignment: .center)
             
         }.padding()
-        
-        
+         .navigationTitle(Text(vegetable.name))
     }
 }
 
